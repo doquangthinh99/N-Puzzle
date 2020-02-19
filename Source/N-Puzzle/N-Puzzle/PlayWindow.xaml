@@ -1,0 +1,18 @@
+﻿<Window x:Class="N_Puzzle.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:N_Puzzle"
+        mc:Ignorable="d"
+        Title="PlayWindow" Height="450" Width="800" Loaded="Window_Loaded" KeyUp="Window_KeyUp">
+    <Canvas Name="CanvarsButton">
+        <Menu x:Name="MainMenu">
+            <MenuItem Header="_File">
+                <MenuItem Name="PlayItem" Header="Play" Click="PlayItem_Click" ></MenuItem>
+                <MenuItem Name="SaveItem" Header="_Save" IsEnabled="False" Click="SaveItem_Click"></MenuItem>
+                <MenuItem Name="LoadItem" Header="_Load" Click="LoadItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </Canvas>
+</Window>
